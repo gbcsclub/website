@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="./assets/icons/site.webmanifest">
+    <script src="./assets/js/htmx.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/output.css">
+    <title>GB CSC — Contact</title>
+</head>
+
+<body class="flex flex-col min-h-dvh">
+    <include src="partials/nav.html"></include>
+
+    <main class="flex-1 grid place-items-center py-16 px-6">
+        <div class="w-full max-w-5xl">
+            <h1 class="text-6xl font-instrument-serif text-main mb-2">Get in touch</h1>
+            <p class="font-geist-mono text-muted mb-12">
+                Reach out to the club, or ping one of the execs directly.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="flex flex-col items-center text-center">
+                    <img src="https://files.caiocotts.com/clubweb/caio.png" alt="Caio Cotts"
+                        class="w-60 h-60 rounded-3xl object-fill">
+                    <h3 class="mt-6 text-2xl font-bold font-geist-mono">Caio Cotts</h3>
+                    <p class="text-muted font-geist-mono">President</p>
+                    <a href="mailto:vp@gbcsc.ca" class="mt-2 font-geist-mono text-main hover:underline">
+                        prez@gbcsc.ca
+                    </a>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <img src="https://files.caiocotts.com/clubweb/alfred.png" alt="Alfred"
+                        class="w-60 h-60 rounded-3xl object-fill">
+                    <h3 class="mt-6 text-2xl font-bold font-geist-mono">Alfred Ranz</h3>
+                    <p class="text-muted font-geist-mono">Vice President</p>
+                    <a href="mailto:president@gbcsc.ca" class="mt-2 font-geist-mono text-main hover:underline">
+                        vp@gbcsc.ca
+                    </a>
+                </div>
+            </div>
+            <div class="mt-16 border-t border-muted/20 pt-8 font-geist-mono text-muted text-sm text-center">
+                General inquiries:
+                <a href="mailto:hello@gbcsc.ca" class="text-main hover:underline">info@gbcsc.ca</a>
+            </div>
+        </div>
+    </main>
+
+    <include src="partials/footer.html"></include>
+</body>
+
+</html>

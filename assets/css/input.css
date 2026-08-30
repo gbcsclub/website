@@ -1,0 +1,9 @@
+@import url(./fonts.css);
+@import "tailwindcss";
+
+@theme {
+    --font-instrument-serif: "Instrument Serif", serif;
+    --font-geist-mono: "Geist Mono", monospace;
+    --color-muted: #6F6F6F;
+    --color-main: #0063FF;
+}

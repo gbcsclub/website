@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="./assets/icons/site.webmanifest">
+    <script src="./assets/js/htmx.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/output.css">
+    <title>GB CSC - About</title>
+</head>
+
+<body class="flex flex-col min-h-dvh">
+    <include src="partials/nav.html"></include>
+
+    <main class="flex-1 grid place-items-center py-10">
+        <div class="w-250">
+            <div class="min-h-112">
+                <script src="https://asciinema.org/a/MFxN8kT0VbZCaM5e.js" id="asciicast-MFxN8kT0VbZCaM5e" data-autoplay
+                    data-rows="18" data-cols="107" async> </script>
+            </div>
+            <div class="text-6xl font-instrument-serif text-main my-10">
+                Our Projects
+            </div>
+            <!-- modularize and make reusable if this list gets real long. don't wanna have to keep writting these article blocks by hand -->
+            <div class="flex flex-col gap-10">
+                <article class="flex flex-col md:flex-row items-center gap-6 md:gap-10">
+                    <img class="w-full md:w-1/2 h-64 object-cover rounded-base"
+                        src="https://files.caiocotts.com/clubweb/hh_team.jpg" alt="HuskyHack">
+                    <div class="md:w-1/2">
+                        <h5 class="mb-2 text-2xl font-bold font-geist-mono text-heading">HuskyHack</h5>
+                        <p class="mb-4 font-geist-mono text-body">Born out of an inter-club collaboration between us and
+                            the
+                            UXCommunity Club. This funny little event made with lots of love and pure cortisol, ran
+                            for 12 hours and left our event-goers yearning for more. 2nd edition in '27?</p>
+                        <a href="https://www.huskyhack.ca/"
+                            class="text-body text-muted font-geist-mono font-bold underline">Read
+                            more</a>
+                    </div>
+                </article>
+                <article class="flex flex-col md:flex-row-reverse items-center gap-6 md:gap-10">
+                    <img class="w-full md:w-1/2 h-64 object-contain rounded-base"
+                        src="https://files.caiocotts.com/clubweb/handy.png" alt="Lorem Ipsum">
+                    <div class="md:w-1/2">
+                        <h5 class="mb-2 text-2xl font-bold font-geist-mono text-heading">Handy Automator</h5>
+                        <p class="mb-4 font-geist-mono text-body">Ever wanted to turn on your smart toaster by throwing
+                            up some gang
+                            signs at a really bulky PTZ camera? Then checkout this cool home automation system we've
+                            built that is entirely computer vision activated.
+                            <span class="font-bold">DISCLAIMER:</span> does not
+                            integrate with smart toasters.
+                        </p>
+                        <a href="https://caiocotts.com/projects/handy-automator/"
+                            class="text-body text-muted font-geist-mono font-bold underline">Read
+                            more</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+    <include src="partials/footer.html"></include>
+</body>
+
+</html>

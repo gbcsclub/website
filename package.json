@@ -1,0 +1,15 @@
+{
+	"scripts": {
+		"dev": "parcel index.html",
+		"css": "pnpm @tailwindcss/cli -i ./assets/css/input.css -o ./assets/css/output.css --watch"
+	},
+	"devDependencies": {
+		"@parcel/packager-raw-url": "2.16.4",
+		"@parcel/transformer-webmanifest": "2.16.4",
+		"@tailwindcss/cli": "^4.3.3",
+		"parcel": "^2.16.4",
+		"posthtml": "^0.16.7",
+		"posthtml-include": "^2.0.1",
+		"tailwindcss": "^4.3.3"
+	}
+}
