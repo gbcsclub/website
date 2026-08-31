@@ -16,19 +16,27 @@
 <body class="flex flex-col min-h-dvh">
     <include src="partials/nav.html"></include>
     <main class="flex-1">
-        <div class="grid h-52 place-items-center mt-40">
-            <div class="relative w-140 h-100 pl-10">
+        <div class="grid place-items-center mt-16 sm:mt-24 md:mt-32 lg:mt-40 px-4">
+            <div
+                class="relative w-full max-w-sm min-h-72 sm:max-w-xl sm:min-h-80 md:max-w-2xl md:min-h-96 lg:w-140 lg:h-100 lg:max-w-none lg:min-h-0 pl-4 sm:pl-6 md:pl-10">
+                <!-- top-* per breakpoint is hand-tuned so the icon lands on "Science", not on top of "Computer" -->
                 <img src="https://files.caiocotts.com/clubweb/fancy_lil_computer.png" alt=""
-                    class="absolute left-3/10 top-14 w-100">
-                <div class="text-muted font-geist-mono text-[1.30em] absolute left-26">George Brown College</div>
-                <div class="text-main text-9xl font-instrument-serif">
+                    class="absolute left-[18%] top-12 w-[75%] max-w-56
+                           sm:left-[22%] sm:top-10 sm:w-[70%] sm:max-w-72
+                           md:left-[26%] md:top-[92px] md:w-80 md:max-w-none
+                           lg:left-3/10 lg:top-14 lg:w-100">
+                <!-- in normal flow below lg (stacks above the title); absolute only at lg to match the original desktop design -->
+                <div
+                    class="text-muted font-geist-mono text-sm sm:text-base md:text-[1.30em] mb-2 sm:mb-3 md:mb-4 lg:mb-0 lg:absolute lg:left-26">
+                    George Brown College</div>
+                <div class="text-main text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-instrument-serif">
                     <div>Computer</div>
                     <div class="relative z-20">Science</div>
                     <div>Club</div>
                 </div>
             </div>
 
-            <div class="pt-10 font-geist-mono">hello, world! welcome to our humble little website</div>
+            <div class="pt-10 font-geist-mono text-center px-4">hello, world! welcome to our humble little website</div>
         </div>
     </main>
     <include src="partials/footer.html"></include>
