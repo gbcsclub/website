@@ -1,6 +1,13 @@
-<nav hx-boost="true" class="grid place-items-center font-geist-mono ">
-    <!-- TODO: responsive hamburger -->
-    <ul class="flex justify-between gap-10 mx-10 mt-4 font-bold">
+<nav hx-boost="true" class="grid place-items-center font-geist-mono">
+    <!-- CSS-only hamburger: checkbox + peer toggles the list below md, no JS needed -->
+    <input id="nav-toggle" type="checkbox" class="peer sr-only">
+    <label for="nav-toggle" class="md:hidden cursor-pointer p-2 mt-4 select-none" aria-label="Toggle menu">
+        <span class="block w-6 h-0.5 bg-current mb-1.5"></span>
+        <span class="block w-6 h-0.5 bg-current mb-1.5"></span>
+        <span class="block w-6 h-0.5 bg-current"></span>
+    </label>
+    <ul class="hidden peer-checked:flex flex-col items-center gap-4 py-4 font-bold
+               md:flex md:flex-row md:justify-between md:gap-10 md:mx-10 md:mt-4 md:py-0">
         <li><a href="/">Home</a></li>
         <li><a href="/join.html">Join</a></li>
         <li><a href="/contact.html">Contact</a></li>
