@@ -642,10 +642,10 @@
     }
   }
 }
-:is(body:has(main[data-page="home"]) nav a[href="/"], body:has(main[data-page="join"]) nav a[href="/join.html"], body:has(main[data-page="contact"]) nav a[href="/contact.html"], body:has(main[data-page="about"]) nav a[href="/about.html"])::before {
+:is(body:has(main[data-page="home"]) nav a[data-nav="home"], body:has(main[data-page="join"]) nav a[data-nav="join"], body:has(main[data-page="contact"]) nav a[data-nav="contact"], body:has(main[data-page="about"]) nav a[data-nav="about"])::before {
   content: "[";
 }
-:is(body:has(main[data-page="home"]) nav a[href="/"], body:has(main[data-page="join"]) nav a[href="/join.html"], body:has(main[data-page="contact"]) nav a[href="/contact.html"], body:has(main[data-page="about"]) nav a[href="/about.html"])::after {
+:is(body:has(main[data-page="home"]) nav a[data-nav="home"], body:has(main[data-page="join"]) nav a[data-nav="join"], body:has(main[data-page="contact"]) nav a[data-nav="contact"], body:has(main[data-page="about"]) nav a[data-nav="about"])::after {
   content: "]";
 }
 @property --tw-border-style {
