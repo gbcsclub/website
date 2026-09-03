@@ -1,7 +1,7 @@
 {
 	"scripts": {
 		"dev": "parcel index.html",
-		"css": "pnpm @tailwindcss/cli -i ./assets/css/input.css -o ./assets/css/output.css --watch"
+		"css": "pnpm dlx @tailwindcss/cli -i ./assets/css/input.css -o ./assets/css/output.css --watch"
 	},
 	"devDependencies": {
 		"@parcel/packager-raw-url": "2.16.4",
